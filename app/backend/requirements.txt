@@ -1,0 +1,10 @@
+# Runtime + test dependencies for the FastAPI backend.
+# Install with:  python -m pip install -r app/backend/requirements.txt
+
+fastapi==0.136.0
+uvicorn==0.45.0
+pydantic==2.13.3
+
+# --- test only -------------------------------------------------------------
+httpx==0.26.0
+pytest==8.3.2

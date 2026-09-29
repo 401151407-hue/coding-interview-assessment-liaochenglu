@@ -1,0 +1,15 @@
+# Normalise line endings so the repository behaves the same on every platform.
+* text=auto
+
+# Shell scripts must keep LF, otherwise they fail with "bad interpreter" on
+# Linux/macOS when the repository is cloned from Windows.
+*.sh text eol=lf
+
+# Windows helpers keep CRLF.
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+# Binary / generated assets are never line-ending converted.
+*.png binary
+*.jpg binary
+*.svg text
